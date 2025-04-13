@@ -16,7 +16,7 @@ const Hero = () => {
           <TypeAnimation
             sequence={[
               'Je suis en recherche de stage',
-              5000,
+              6000,
               'Développeur Backend',
               2000,
               'Data Engineer (en formation)',
