@@ -6,7 +6,7 @@ const About = () => {
         <div className="w-full grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           <div className="text-center">
             <div className="relative inline-block flex justify-center items-center">
-              <img src="/images/Me2.png" alt="Ange BONI" className="w-64 h-64 rounded-lg object-cover ring-4 ring-secondary ring-opacity-50" />
+              <img src={`${import.meta.env.BASE_URL}images/Me2.png`} alt="Ange BONI" className="w-64 h-64 rounded-lg object-cover ring-4 ring-secondary ring-opacity-50" />
               <div className="absolute -bottom-2 -right-2 bg-secondary text-primary p-2 rounded-full">
                 <i className="fas fa-robot"></i>
               </div>

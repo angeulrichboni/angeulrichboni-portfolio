@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import projects from "../data/projectsData";
-
+import { resolveIcon } from "../utils/resolveIcon";
 const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === parseInt(id));
@@ -61,7 +61,7 @@ const ProjectDetail = () => {
             {/* Image principale avec overlay */}
             <div className="relative h-[500px] overflow-hidden group">
               <img 
-                src={currentImage.url} 
+                src={`${import.meta.env.BASE_URL}${currentImage.url}`}
                 alt={currentImage.caption}
                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
               />
@@ -86,7 +86,7 @@ const ProjectDetail = () => {
                         onClick={() => setCurrentImage(image)}
                       >
                         <img 
-                          src={image.url} 
+                          src={`${import.meta.env.BASE_URL}${image.url}`}
                           alt={image.caption}
                           className="w-full h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                         />
@@ -112,7 +112,7 @@ const ProjectDetail = () => {
                       onClick={() => setCurrentImage(image)}
                     >
                       <img 
-                        src={image.url} 
+                        src={`${import.meta.env.BASE_URL}${image.url}`} 
                         alt={image.caption}
                         className="w-full h-40 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
                       />
@@ -134,7 +134,7 @@ const ProjectDetail = () => {
                   {project.tags.map((tag, index) => (
                     <div key={index} className="flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-lg">
                       <img 
-                        src={tag.iconUrl} 
+                        src={resolveIcon(tag.iconUrl)} 
                         alt={`${tag.name} icon`}
                         className="w-5 h-5 object-contain"
                       />
@@ -174,9 +174,9 @@ const ProjectDetail = () => {
                     {project.teamMembers.map((member, index) => (
                       <div key={index} className="bg-primary/20 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                         <div className="flex items-center space-x-4 mb-4">
-                          {member.avatar && (
-                            <img src={member.avatar} alt={member.name} className="w-12 h-12 rounded-full object-cover" />
-                          )}
+                          <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-primary">
+                            <i className="fas fa-user text-xl"></i>
+                          </div>
                           <p className="text-text-primary font-semibold text-lg">
                             {member.name}
                           </p>

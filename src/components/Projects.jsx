@@ -11,7 +11,7 @@ const Projects = () => {
           {projects.map(project => (
             <div key={project.id} className="bg-primary-light rounded-xl shadow-lg overflow-hidden card-hover">
               <div className="h-48 overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                <img src={project.image.startsWith('http') ? project.image : `${import.meta.env.BASE_URL}${project.image}`} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 gradient-text">{project.title}</h3>

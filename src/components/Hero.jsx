@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
   return (
     <section id="accueil" className="min-h-screen w-full flex items-center justify-center bg-cover bg-center relative overflow-hidden" style={{ 
-      backgroundImage: 'linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url("/images/background-hero.jpg")',
+      backgroundImage: `linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url("${import.meta.env.BASE_URL}images/background-hero.jpg")`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
