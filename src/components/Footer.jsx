@@ -11,9 +11,6 @@ const Footer = () => {
             <a href="#" className="hover:text-secondary transition-colors">
               <i className="fab fa-github"></i>
             </a>
-            {/* <a href="#" className="hover:text-secondary transition-colors">
-              <i className="fab fa-twitter"></i>
-            </a> */}
           </div>
         </div>
       </div>

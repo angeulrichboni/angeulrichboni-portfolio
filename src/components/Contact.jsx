@@ -38,9 +38,6 @@ const Contact = () => {
                 <a href="https://github.com/angeulrichboni?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank" rel='noopener noreferrer' className="text-text-secondary hover:text-secondary transition-colors">
                   <i className="fab fa-github text-2xl"></i>
                 </a>
-                {/* <a href="#" target="_blank" rel='noopener noreferrer' className="text-text-secondary hover:text-secondary transition-colors">
-                  <i className="fab fa-twitter text-2xl"></i>
-                </a> */}
               </div>
             </div>
           </div>
