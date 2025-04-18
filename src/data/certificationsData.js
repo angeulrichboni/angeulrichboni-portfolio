@@ -1,7 +1,7 @@
 const certifications = [
     {
       id: 1,
-      logo: "/certifications/RedHat.png",
+      logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744896924/RedHat_glcmuf.png",
       title: "Red Hat Certified System Administrator (RHCSA)",
       date: "Mai 2024",
       exp: "Mai 2027",
@@ -10,7 +10,7 @@ const certifications = [
     },
     {
       id: 2,
-      logo: "/certifications/Docker.png",
+      logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744896923/Docker_etkirw.png  ",
       title: "Bases de Docker pour la conteneurisation",
       date: "Février 2025",
       exp: "",
@@ -19,7 +19,7 @@ const certifications = [
     },
     {
       id: 3,
-      logo: "/certifications/Devops.png",
+      logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744896926/Devops_abzvxv.png",
       title: "DevOps Essentials",
       date: "Septembre 2024",
       exp: "",
@@ -28,12 +28,21 @@ const certifications = [
     },
     {
       id: 4,
-      logo: "/certifications/Coursera.png",
+      logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744896922/Coursera_phrw6t.png",
       title: "Data Engineering Essentials",
       date: "Mars 2025",
       exp: "",
       issuer: "Coursera",
       link: "https://www.credly.com/badges/d99f040f-a186-45fd-aafa-02aac379381e"
+    },
+    {
+      id: 4,
+      logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744931868/logo-new-white-green-a5cb16e0ae_dpd6qs.svg",
+      title: "SQL Intermediaire",
+      date: "Decembre 2023",
+      exp: "",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/11d3f5a3d5ba"
     }
 ]
 

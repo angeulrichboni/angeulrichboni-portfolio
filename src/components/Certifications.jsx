@@ -11,7 +11,7 @@ const Certifications = () => {
             <div key={cert.id} className="bg-primary-light rounded-xl shadow-lg overflow-hidden card-hover">
               <div className="p-6">
                 <div className="h-16 mb-4 flex items-center justify-center">
-                  <img src={cert.logo.startsWith('http') ? cert.logo : `${import.meta.env.BASE_URL}${cert.logo}`} alt={`${cert.issuer} Logo`} className="max-h-full" />
+                  <img src={cert.logo} alt={`${cert.issuer} Logo`} className="max-h-full" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 gradient-text">{cert.title}</h3>
