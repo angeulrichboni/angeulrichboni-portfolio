@@ -36,7 +36,7 @@ const certifications = [
       link: "https://www.credly.com/badges/d99f040f-a186-45fd-aafa-02aac379381e"
     },
     {
-      id: 4,
+      id: 5,
       logo: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744931868/logo-new-white-green-a5cb16e0ae_dpd6qs.svg",
       title: "SQL Intermediaire",
       date: "Decembre 2023",
