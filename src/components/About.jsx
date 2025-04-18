@@ -13,7 +13,7 @@ const About = () => {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold mb-4 gradient-text">Futur Data Engineer & Administrateur Système</h3>
+            <h3 className="text-3xl font-bold mb-4 gradient-text">Administrateur Système & Futur Data Engineer</h3>
             <p className="text-lg text-text-secondary mb-4">Passionné par les données et l'infrastructure</p>
             <p className="mb-8 text-text-secondary">
               Je suis en formation pour devenir Data Engineer, une discipline qui me passionne profondément. 
