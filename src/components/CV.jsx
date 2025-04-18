@@ -106,10 +106,10 @@ const CV = () => {
           
 
           <div className="flex justify-center space-x-4">
-            <a href="assets/cv.pdf" className="inline-flex items-center bg-secondary hover:bg-tertiary text-primary px-8 py-4 rounded-lg transition-all duration-300" download>
+            <a href="https://drive.google.com/file/d/1AA9d3i38mIEXtNGf8SjT_QJrkGCbeMHu/view?usp=sharing" target="_blank" rel='noopener noreferrer' className="inline-flex items-center bg-secondary hover:bg-tertiary text-primary px-8 py-4 rounded-lg transition-all duration-300" download>
               <i className="fas fa-download mr-2"></i> Download CV in English
             </a>
-            <a href="assets/cv.pdf" className="inline-flex items-center bg-secondary hover:bg-tertiary text-primary px-8 py-4 rounded-lg transition-all duration-300" download>
+            <a href="https://drive.google.com/file/d/1tTVXSdQa8kKDnhY8giZqUndgcRFNQhl_/view?usp=sharing" target="_blank" rel='noopener noreferrer' className="inline-flex items-center bg-secondary hover:bg-tertiary text-primary px-8 py-4 rounded-lg transition-all duration-300" download>
               <i className="fas fa-download mr-2"></i> Télécharger CV en Français
             </a>
           </div>

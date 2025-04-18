@@ -185,10 +185,6 @@ const projects = [
         caption: "Page de Prise de Rendez-vous"
       },
       {
-        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744897035/dash_client_vn0tfo.png",
-        caption: "Dashboard client"
-      },
-      {
         url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1744932678/admin_dash_dbsamq.png",
         caption: "Dashboard admin"
       },
