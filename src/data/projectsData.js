@@ -1,6 +1,77 @@
 const projects = [
   {
     id: 1,
+    title: "SmartDataFlow – Optimisation des prévisions dans la supply chain",
+    description_breve: "SmartDataFlow est un projet d’optimisation de la supply chain combinant Business Intelligence et Machine Learning pour améliorer la précision des prévisions de la demande.",
+    description_detaillee: `Dans un contexte où les erreurs de prévision peuvent entraîner des ruptures de stock ou du sur-stockage, SmartDataFlow vise à améliorer la gestion des stocks en intégrant un système de Business Intelligence doté de capacités analytiques avancées. 
+          Le projet exploite des modèles de Machine Learning pour affiner les prévisions de la demande, contribuant ainsi à une meilleure rentabilité et à une prise de décision plus éclairée dans la supply chain.`,
+    image: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749741515/bord_web_niafi1.jpg",
+    githubUrl: "",
+    ressources: [],
+    tags: [
+      {
+        name: "SQL",
+        iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        name: "Apache Airflow",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Apache-Airflow.svg"
+      },
+      {
+        name: "Python",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/Python.svg"
+      },
+      {
+        name: "PostgreSQL",
+        iconUrl: "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg"
+      },
+      {
+        name: "SQL Server",
+        iconUrl: "https://img.icons8.com/?size=512&id=laYYF3dV0Iew&format=png"
+      },
+      {
+        name: "Power BI",
+        iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/2048px-New_Power_BI_Logo.svg.png"
+      }
+    ],
+    gallery: [
+      {
+        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749741725/airflow_dag_hnbirp.png",
+        caption: "Airflow Pipeline"
+      },
+      {
+        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749741727/home_dash_lalxcu.png",
+        caption: "Dashboard Power BI"
+      },
+      {
+        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749741726/fastapi_yy1rmw.jpg",
+        caption: "Swagger API Modèle"
+      },
+      {
+        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749741726/erp_post_mcd_o67frr.png",
+        caption: "MCD Base de donnée de production"
+      },
+      {
+        url: "https://res.cloudinary.com/ddivqszbt/image/upload/v1749742141/mcd_sql_server_erp_klc6pi.png",
+        caption: "MCD DataWarehouse"
+      }
+    ],
+    isTeamProject: true,
+    teamMembers: [
+      {
+        name: "OUATTARA Kiboyou Mohamed",
+        roles: ["Développeur Full Stack", "UI/UX Designer", "Eleve Ingenieur en Machine Learning"],
+        profileUrl: "https://www.linkedin.com/in/kiboyou-mohamed-ouattara-4131bb220/"
+      },
+      {
+        name: "AHIKPA Jean Christian",
+        roles: ["Développeur Frontend", "Eleve Ingenieur en Data Science"],
+        profileUrl: "https://www.linkedin.com/in/jean-christian-ahikpa/"
+      }
+    ]
+  },
+  {
+    id: 2,
     title: "Examen pratique : Exemple de SQL Associate",
     description_breve: "Examen pratique de SQL Associate effectué sur DataCamp",
     description_detaillee: `Sujet de l'examen : Tech Solutions Inc. est une entreprise technologique de premier plan spécialisée dans le développement de logiciels et les services de conseil en informatique. 
@@ -27,7 +98,7 @@ const projects = [
     teamMembers: []
   },
   {
-    id: 2,
+    id: 3,
     title: "Application de Gestion de Document (KnowLab)",
     description_breve: "Mise en place d'une application de gestion de documents",
     description_detaillee: `Développement d'une application web de gestion documentaire permettant à plusieurs utilisateurs de consulter, télécharger ou prévisualiser des documents en ligne, selon leurs besoins et leurs droits d’accès. 
@@ -77,7 +148,7 @@ const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Application de Location de Véhicules (Car Express)",
     description_breve: "Mise en place d'une application de location de véhicules avec Laravel et MySQL",
     description_detaillee: `Application web de location de voitures, destinée aux agences souhaitant digitaliser leur service. 
@@ -137,7 +208,7 @@ const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "Application de Gestion de Prise de Rendez-vous (ClickHealth)",
     description_breve: "Mise en place d'une application de gestion de prise de rendez-vous dans les cliniques",
     description_detaillee: `Le projet ClickHealth consiste en la création d'une plateforme web dédiée à la gestion complète des consultations médicales. 

@@ -11,6 +11,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ProjectDetail from './pages/ProjectDetail'
+import AllProjects from './pages/AllProjects'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -53,6 +54,7 @@ function App() {
             </>
           } />
           <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/projects" element={<AllProjects />} />
         </Routes>
       </main>
 

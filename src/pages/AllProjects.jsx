@@ -1,17 +1,14 @@
 import { Link } from 'react-router-dom';
 import projects from '../data/projectsData';
 
-const Projects = () => {
-  const visibleProjects = projects.slice(0, 4); // On limite à 4 projets
-  const hasMoreProjects = projects.length > 4;
-
+const AllProjects = () => {
   return (
-    <section id="projets" className="w-full py-20 bg-primary">
+    <section className="w-full py-20 bg-primary">
       <div className="w-full container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 section-title">Mes Projets</h2>
-        
+        <h2 className="text-4xl font-bold text-center mb-16 section-title">Tous mes projets</h2>
+
         <div className="w-full grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {visibleProjects.map(project => (
+          {projects.map(project => (
             <div key={project.id} className="bg-primary-light rounded-xl shadow-lg overflow-hidden card-hover">
               <div className="h-48 overflow-hidden">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
@@ -36,20 +33,9 @@ const Projects = () => {
             </div>
           ))}
         </div>
-
-        {hasMoreProjects && (
-          <div className="mt-10 text-center">
-            <Link 
-              to="/projects" 
-              className="inline-block bg-secondary text-primary px-6 py-3 rounded-full font-semibold hover:bg-tertiary transition-colors duration-300"
-            >
-              Voir tous les projets
-            </Link>
-          </div>
-        )}
       </div>
     </section>
   )
 }
 
-export default Projects;
+export default AllProjects;
